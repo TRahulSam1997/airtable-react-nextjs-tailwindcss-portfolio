@@ -1,14 +1,17 @@
 import Head from 'next/head';
-export default function Home() {
+import { table, minifyRecords } from './api/utils/airtable';
 
+export default function Home() {
     return (
         <div>
-            <Head>
-                <title>Porfolio</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <main>
-              <h1 className="text-2xl text-center mb-4">Porfolio</h1>
+              <div className="max-w-xl m-auto p-2">
+              <Head>
+                  <title>Porfolio</title>
+                  <link rel="icon" href="/favicon.ico" />
+              </Head>
+                <h1 className="text-2xl text-center mb-4">Porfolio</h1>
+              </div>
             </main>
         </div>
     );
