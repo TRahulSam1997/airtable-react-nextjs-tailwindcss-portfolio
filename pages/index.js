@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { table, minifyRecords } from './api/utils/airtable';
 import Navbar from '../components/Navbar';
 
-export default function Home() {
+export default function Home({initialDataItems}) {
+  console.log(initialDataItems);
     return (
         <div>
             <main>
@@ -17,4 +18,24 @@ export default function Home() {
             </main>
         </div>
     );
+}
+
+export async function getServerSideProps(context) {
+  try {
+    let dataItems = await table
+        .select({ })
+        .firstPage();
+    return {
+        props: {
+            initialDataItems: minifyRecords(dataItems),
+        }
+    };
+  } catch (e) {
+    console.log(e);
+    return {
+      props: {
+        e: "Something Went Wrong!"
+      }
+    }
+  }
 }
