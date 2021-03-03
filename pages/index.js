@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { table, minifyRecords } from './api/utils/airtable';
 import Navbar from '../components/Navbar';
+import DataItem from '../components/DataItem';
 
 export default function Home({initialDataItems}) {
-  console.log(initialDataItems);
     return (
         <div>
             <main>
@@ -14,6 +14,9 @@ export default function Home({initialDataItems}) {
               </Head>
                 <Navbar />
                 <h1 className="text-2xl text-center mb-4">Porfolio</h1>
+                {initialDataItems.map((dataItem) => (
+                  <DataItem key={dataItem.id} dataItem={dataItem} />
+                ))}
               </div>
             </main>
         </div>
