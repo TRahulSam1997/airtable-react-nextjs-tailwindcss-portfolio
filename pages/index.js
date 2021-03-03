@@ -1,9 +1,17 @@
 import Head from 'next/head';
 import { table, minifyRecords } from './api/utils/airtable';
+import {DataItemsContext} from '../contexts/dataContext';
 import Navbar from '../components/Navbar';
 import DataItem from '../components/DataItem';
+import {useEffect, useContext} from 'react';
 
 export default function Home({initialDataItems}) {
+
+  const { dataItems, setDataItems } = useContext(DataItemsContext);
+
+  useEffect(() => {
+    setDataItems(initialDataItems)
+  }, [])
     return (
         <div>
             <main>
@@ -15,8 +23,9 @@ export default function Home({initialDataItems}) {
                 <Navbar />
                 <h1 className="text-2xl text-center mb-4">Porfolio</h1>
                 <ul>
-                  {initialDataItems.map((dataItem) => (
-                    <DataItem key={dataItem.id} dataItem={dataItem} />
+                  {dataItems &&
+                    dataItems.map((dataItem) => (
+                      <DataItem key={dataItem.id} dataItem={dataItem} />
                   ))}
                 </ul>
               </div>

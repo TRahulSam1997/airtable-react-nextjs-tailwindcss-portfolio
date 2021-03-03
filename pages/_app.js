@@ -4,9 +4,11 @@ import {DataItemsProvider} from '../contexts/dataContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="container mx-auto my-10 max-w-xl">
-        <Component {...pageProps} />
-    </div>
+    <DataItemsProvider>
+      <div className="container mx-auto my-10 max-w-xl">
+          <Component {...pageProps} />
+      </div>
+    </DataItemsProvider>
   );
 }
 
