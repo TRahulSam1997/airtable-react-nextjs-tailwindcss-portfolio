@@ -14,9 +14,11 @@ export default function Home({initialDataItems}) {
               </Head>
                 <Navbar />
                 <h1 className="text-2xl text-center mb-4">Porfolio</h1>
-                {initialDataItems.map((dataItem) => (
-                  <DataItem key={dataItem.id} dataItem={dataItem} />
-                ))}
+                <ul>
+                  {initialDataItems.map((dataItem) => (
+                    <DataItem key={dataItem.id} dataItem={dataItem} />
+                  ))}
+                </ul>
               </div>
             </main>
         </div>
