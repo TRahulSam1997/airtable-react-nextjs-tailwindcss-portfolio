@@ -1,8 +1,8 @@
 import {createContext, useState} from 'react';
 
-const dataItemsContext = createContext();
+const DataItemsContext = createContext();
 
-const dataItemsProvider = ({children}) => {
+const DataItemsProvider = ({children}) => {
 
     const [dataItems, setDataItems] = useState([]);
 
@@ -17,7 +17,7 @@ const dataItemsProvider = ({children}) => {
     }
 
     return (
-        <dataItemsContext.Provider
+        <DataItemsContext.Provider
             value={{
                 dataItems,
                 setDataItems,
@@ -25,8 +25,8 @@ const dataItemsProvider = ({children}) => {
             }}
         >
             {children}
-        </dataItemsContext.Provider>
+        </DataItemsContext.Provider>
     );
 }
 
-export {dataItemsProvider, dataItemsContext}
+export {DataItemsProvider, DataItemsContext}

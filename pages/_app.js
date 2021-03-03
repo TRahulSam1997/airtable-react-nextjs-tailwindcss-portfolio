@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/index.css';
+import {DataItemsProvider} from '../contexts/dataContext';
 
 function MyApp({ Component, pageProps }) {
   return (
