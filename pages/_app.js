@@ -5,7 +5,7 @@ import {DataItemsProvider} from '../contexts/dataContext';
 function MyApp({ Component, pageProps }) {
   return (
     <DataItemsProvider>
-      <div className="container mx-auto my-10 max-w-xl">
+      <div className="bg-gray-800 pattern py-5">
           <Component {...pageProps} />
       </div>
     </DataItemsProvider>
