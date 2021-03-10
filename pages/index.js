@@ -8,7 +8,6 @@ import {useEffect, useContext} from 'react';
 export default function Home({initialDataItems}) {
 
   const { dataItems, setDataItems } = useContext(DataItemsContext);
-
   useEffect(() => {
     setDataItems(initialDataItems)
   }, [])
@@ -21,9 +20,9 @@ export default function Home({initialDataItems}) {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                   <Navbar />
-                  <section className="bg-white mt-20">
+                  <section className="bg-white mt-20 py-3">
                     <div className="max-w-2xl px-6 text-center mx-auto">
-                      <h2 className="text-3xl font-semibold text-gray-800">Hi, <span className="bg-indigo-600 text-white rounded px-1">I’m Rahul</span> . Nice to meet you.</h2>
+                      <h2 className="text-3xl font-semibold text-gray-800">Hi, <span className="bg-indigo-600 text-white rounded px-1">Rahul</span>. Nice to meet you.</h2>
                       <p className="text-gray-600 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A aliquam veniam suscipit eaque iure, eligendi harum expedita cupiditate sequi, culpa autem! Quaerat ex fugit iste suscipit reiciendis, accusamus ipsum quae.</p>
                     </div>
                   </section>

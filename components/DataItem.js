@@ -3,7 +3,7 @@ import React from 'react'
 export default function DataItem({ dataItem }) {
     return (
             <div>
-                <div className="m-auto px-4 py-8 max-w-xl">
+                <div className="m-auto mt-10 py-3">
                     <div className="bg-white shadow-2xl" >
                         <div>
                             <img src={dataItem.fields.image} />
