@@ -21,6 +21,8 @@
   3) Make sure your Airtable base has the fields **title, description and image**.
         - Fields are **case sensitive**.
         - Make sure the **image** fields is a **URL** type.
-  4) Run ```cd airtable-react-nextjs-tailwindcss-portfolio; npm i; npm run dev```
+  4) Run ```cd airtable-react-nextjs-tailwindcss-portfolio```
+         ```npm i```
+         ```npm run dev```
 
 **This project is still in progress.*
