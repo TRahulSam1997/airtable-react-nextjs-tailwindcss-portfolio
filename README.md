@@ -23,9 +23,9 @@
         - Make sure the **image** fields is a **URL** type.
   4) Run
      ``` js
-          cd airtable-react-nextjs-tailwindcss-portfolio
-          npm i
-          npm run dev
+        cd airtable-react-nextjs-tailwindcss-portfolio
+        npm i
+        npm run dev
      ```
 
 **This project is still in progress.*
