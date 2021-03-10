@@ -12,6 +12,10 @@
           AIRTABLE_API_KEY: undefined
           AIRTABLE_BASE_ID: undefined
           AIRTABLE_TABLE_NAME: undefined
+          NEXT_PUBLIC_FIRST_NAME= undefined
+          NEXT_PUBLIC_SECOND_NAME= undefined
+          NEXT_PUBLIC_ABOUT= undefined
+          NEXT_PUBLIC_TWITTER= undefined
       ```
       Get your values here: https://airtable.com/api
   3) Make sure your Airtable base has the fields **title, description and image**.

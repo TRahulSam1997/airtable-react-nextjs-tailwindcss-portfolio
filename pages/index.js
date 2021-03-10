@@ -22,8 +22,8 @@ export default function Home({initialDataItems}) {
                   <Navbar />
                   <section className="bg-white mt-20 py-3">
                     <div className="max-w-2xl px-6 text-center mx-auto">
-                      <h2 className="text-3xl font-semibold text-gray-800">Hi, <span className="bg-indigo-600 text-white rounded px-1">Rahul</span>. Nice to meet you.</h2>
-                      <p className="text-gray-600 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A aliquam veniam suscipit eaque iure, eligendi harum expedita cupiditate sequi, culpa autem! Quaerat ex fugit iste suscipit reiciendis, accusamus ipsum quae.</p>
+                      <h2 className="text-3xl font-semibold text-gray-800">Hi, <span className="bg-indigo-600 text-white rounded px-1">{process.env.NEXT_PUBLIC_FIRST_NAME}</span>. Nice to meet you.</h2>
+                      <p className="text-gray-600 mt-4">{process.env.NEXT_PUBLIC_ABOUT}</p>
                     </div>
                   </section>
                   <ul>
@@ -36,7 +36,7 @@ export default function Home({initialDataItems}) {
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <div>
-                        <div className="text-gray-600">&copy; Rahul Samaranayake</div>
+                        <div className="text-gray-600">&copy; {process.env.NEXT_PUBLIC_FIRST_NAME} {process.env.NEXT_PUBLIC_SECOND_NAME}</div>
                     </div>
                 </div>
             </div>
