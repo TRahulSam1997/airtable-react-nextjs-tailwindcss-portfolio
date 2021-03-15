@@ -48,7 +48,7 @@ export default function Home({initialDataItems}) {
     );
 }
 
-export async function getInitialProps(context) {
+export async function getServerSideProps(context) {
   try {
     let dataItems = await table
         .select({ })
