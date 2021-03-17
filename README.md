@@ -27,6 +27,6 @@
         npm i
         npm run dev
      ```
-Demo: https://airtable-react-nextjs-tailwindcss-portfolio-3ko2plj64.vercel.app/
+Demo: https://airtable-react-nextjs-tailwindcss-portfolio-trahulsam1997.vercel.app/
 
 **This project is still in progress.*
