@@ -22,7 +22,7 @@ export default function Home({initialDataItems}) {
                   <Navbar />
                   <section className="bg-white mt-20 py-3">
                     <div className="max-w-2xl px-6 text-center mx-auto">
-                      <h2 className="text-3xl font-semibold text-gray-800">Hi, i'm <span className="bg-indigo-600 text-white rounded px-1">{process.env.NEXT_PUBLIC_FIRST_NAME}</span>. Nice to meet you.</h2>
+                      <h2 className="text-3xl font-semibold text-gray-800">Hi, I'm <span className="bg-indigo-600 text-white rounded px-1">{process.env.NEXT_PUBLIC_FIRST_NAME}</span>. Nice to meet you.</h2>
                       <p className="text-gray-600 mt-4">{process.env.NEXT_PUBLIC_ABOUT}</p>
                     </div>
                   </section>
