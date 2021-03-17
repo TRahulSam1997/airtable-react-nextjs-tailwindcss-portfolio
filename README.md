@@ -29,4 +29,6 @@
      ```
 Demo: https://airtable-react-nextjs-tailwindcss-portfolio-trahulsam1997.vercel.app/
 
+Inspired by James Q Quick: https://github.com/jamesqquick/Authenticated-Todo-App-with-NextJS-Airtable-and-Auth0
+
 **This project is still in progress.*
